@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Météo France</string>
+    <string name="welcome_message">Bienvenue à Météo France </string>
+    <string name="welcome_button_text">Afficher la météo</string>
+    <string name="first_message">Nous téléchargeons les données…</string>
+    <string name="second_message">C’est presque fini…</string>
+    <string name="third_message">Plus que quelques secondes avant d’avoir le résultat…</string>
+    <string name="weather_button_text">Recommencer</string>
+
+    <string name="item_city">Ville: </string>
+    <string name="item_temperature">Température: </string>
+    <string name="item_cloud">Couverture nuageuse: </string>
+
+    <string name="data_not_found">Données introuvables, veuillez réessayer</string>
+</resources>

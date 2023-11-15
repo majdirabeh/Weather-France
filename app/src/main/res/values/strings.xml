@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather France</string>
+    <string name="welcome_message">Welcome to Weather France</string>
+    <string name="welcome_button_text">Show Weather</string>
+    <string name="first_message">We download the data…</string>
+    <string name="second_message">It\'s almost done…</string>
+    <string name="third_message">Only a few seconds left before we get the result…</string>
+    <string name="weather_button_text">Try again</string>
+
+    <string name="item_city">City: </string>
+    <string name="item_temperature">Temperature: </string>
+    <string name="item_cloud">Cloud Coverage: </string>
+
+    <string name="data_not_found">Data not found please try again</string>
+</resources>
