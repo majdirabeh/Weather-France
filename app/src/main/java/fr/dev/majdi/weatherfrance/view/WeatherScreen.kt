@@ -91,7 +91,6 @@ fun WeatherScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 if (!isProgressNotFinished.value) {
-                    weatherViewModel.responseList.clear()
                     WeatherList(weatherDataList = weatherViewModel.responseList)
                 }
                 ProgressBar(weatherViewModel, currentLanguage)
