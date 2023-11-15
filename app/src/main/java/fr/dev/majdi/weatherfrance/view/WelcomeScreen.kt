@@ -14,6 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import fr.dev.majdi.weatherfrance.R
+import fr.dev.majdi.weatherfrance.model.Screen
 
 /**
  * Created by Majdi RABEH on 15/11/2023.
@@ -37,7 +38,7 @@ fun WelcomeScreen(navController: NavHostController) {
         Button(
             onClick = {
                 // Navigate to the next screen
-                navController.navigate("WeatherScreen")
+                navController.navigate(Screen.WeatherScreen.name)
             },
             modifier = Modifier.padding(10.dp)
         ) {

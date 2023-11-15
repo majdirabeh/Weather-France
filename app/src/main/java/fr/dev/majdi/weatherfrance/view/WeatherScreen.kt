@@ -271,7 +271,7 @@ fun WeatherItem(weatherResponse: WeatherResponse) {
             Text(
                 text = (stringResource(id = R.string.item_cloud) + " " + weatherResponse.weather.getOrNull(
                     0
-                )?.description) ?: "Unknown",
+                )?.description),
                 fontWeight = FontWeight.Bold
             )
         }
