@@ -61,14 +61,8 @@ class WeatherViewModel @Inject constructor(
     private fun fetchWeather(city: String, apiKey: String, currentLanguage: String) {
         viewModelScope.launch {
             weatherRepository.fetchWeatherData(city, apiKey, currentLanguage).collect {
-                try {
-                    it.data?.let { weatherResponse ->
-                        responseList.add(weatherResponse)
-                    }
-                } catch (e: Exception) {
-                    responseList.clear()
-                    // Handle errors
-                    e.printStackTrace()
+                it.data?.let { weatherResponse ->
+                    responseList.add(weatherResponse)
                 }
             }
         }

@@ -8,7 +8,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.google.accompanist.insets.ProvideWindowInsets
 import dagger.hilt.android.AndroidEntryPoint
 import fr.dev.majdi.weatherfrance.model.Screen
 import fr.dev.majdi.weatherfrance.ui.theme.WeatherFranceTheme
@@ -25,26 +24,25 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ProvideWindowInsets {
-                WeatherFranceTheme {
-                    val navController: NavHostController = rememberNavController()
-                    val currentLanguage = LanguageUtils.getCurrentLanguage(this)
-                    // Set up the NavHost with your destinations
-                    NavHost(
-                        navController = navController,
-                        startDestination = Screen.WelcomeScreen.name
-                    ) {
-                        composable(Screen.WelcomeScreen.name) { WelcomeScreen(navController) }
-                        composable(Screen.WeatherScreen.name) {
-                            WeatherScreen(
-                                navController,
-                                weatherViewModel,
-                                currentLanguage
-                            )
-                        }
+            WeatherFranceTheme {
+                val navController: NavHostController = rememberNavController()
+                val currentLanguage = LanguageUtils.getCurrentLanguage(this)
+                // Set up the NavHost with your destinations
+                NavHost(
+                    navController = navController,
+                    startDestination = Screen.WelcomeScreen.name
+                ) {
+                    composable(Screen.WelcomeScreen.name) { WelcomeScreen(navController) }
+                    composable(Screen.WeatherScreen.name) {
+                        WeatherScreen(
+                            navController,
+                            weatherViewModel,
+                            currentLanguage
+                        )
                     }
                 }
             }
+
         }
     }
 }
