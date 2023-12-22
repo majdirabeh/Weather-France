@@ -1,4 +1,4 @@
-package fr.dev.majdi.weatherfrance.view
+package fr.dev.majdi.weatherfrance.ui.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -46,10 +46,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import fr.dev.majdi.weatherfrance.R
-import fr.dev.majdi.weatherfrance.model.WeatherResponse
+import fr.dev.majdi.weatherfrance.domain.model.WeatherResponse
 import fr.dev.majdi.weatherfrance.utils.Constants
 import fr.dev.majdi.weatherfrance.utils.Utils.getWeatherIcon
-import fr.dev.majdi.weatherfrance.viewmodel.WeatherViewModel
+import fr.dev.majdi.weatherfrance.ui.viewmodel.WeatherViewModel
 import kotlinx.coroutines.delay
 
 /**
@@ -105,7 +105,7 @@ fun WeatherScreen(
 fun ProgressBar(weatherViewModel: WeatherViewModel, currentLanguage: String) {
     Column(
         modifier = Modifier
-            .padding(bottom = 32.dp) // margin
+            .padding(bottom = 32.dp)
             .fillMaxSize()
             .fillMaxWidth()
             .fillMaxHeight(),

@@ -1,6 +1,6 @@
-package fr.dev.majdi.weatherfrance.service
+package fr.dev.majdi.weatherfrance.data.remote.service
 
-import fr.dev.majdi.weatherfrance.model.Result
+import fr.dev.majdi.weatherfrance.domain.model.Result
 import fr.dev.majdi.weatherfrance.utils.ErrorUtils
 import retrofit2.Response
 

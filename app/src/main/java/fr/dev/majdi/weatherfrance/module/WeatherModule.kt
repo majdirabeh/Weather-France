@@ -6,7 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.internal.managers.ApplicationComponentManager
 import dagger.hilt.components.SingletonComponent
 import fr.dev.majdi.weatherfrance.BuildConfig
-import fr.dev.majdi.weatherfrance.service.WeatherApi
+import fr.dev.majdi.weatherfrance.data.remote.service.WeatherApi
 import fr.dev.majdi.weatherfrance.utils.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

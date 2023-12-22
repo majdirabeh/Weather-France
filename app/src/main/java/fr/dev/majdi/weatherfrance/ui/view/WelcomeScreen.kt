@@ -1,4 +1,4 @@
-package fr.dev.majdi.weatherfrance.view
+package fr.dev.majdi.weatherfrance.ui.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import fr.dev.majdi.weatherfrance.R
-import fr.dev.majdi.weatherfrance.model.Screen
+import fr.dev.majdi.weatherfrance.domain.model.Screen
 
 /**
  * Created by Majdi RABEH on 15/11/2023.

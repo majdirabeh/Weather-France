@@ -1,4 +1,4 @@
-package fr.dev.majdi.weatherfrance.model
+package fr.dev.majdi.weatherfrance.domain.model
 
 data class Main(
     val feels_like: Double,

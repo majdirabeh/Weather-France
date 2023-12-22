@@ -1,9 +1,9 @@
 package fr.dev.majdi.weatherfrance.data.remote
 
-import fr.dev.majdi.weatherfrance.model.Result
-import fr.dev.majdi.weatherfrance.model.WeatherResponse
-import fr.dev.majdi.weatherfrance.service.WeatherApi
-import fr.dev.majdi.weatherfrance.service.apiResponse
+import fr.dev.majdi.weatherfrance.domain.model.Result
+import fr.dev.majdi.weatherfrance.domain.model.WeatherResponse
+import fr.dev.majdi.weatherfrance.data.remote.service.WeatherApi
+import fr.dev.majdi.weatherfrance.data.remote.service.apiResponse
 import javax.inject.Inject
 
 /**

@@ -1,8 +1,8 @@
 package fr.dev.majdi.weatherfrance.data.repository
 
 import fr.dev.majdi.weatherfrance.data.remote.RemoteDataSource
-import fr.dev.majdi.weatherfrance.model.Result
-import fr.dev.majdi.weatherfrance.model.WeatherResponse
+import fr.dev.majdi.weatherfrance.domain.model.Result
+import fr.dev.majdi.weatherfrance.domain.model.WeatherResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject

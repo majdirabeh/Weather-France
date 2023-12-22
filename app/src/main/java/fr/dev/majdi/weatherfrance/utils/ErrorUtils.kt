@@ -3,7 +3,7 @@ package fr.dev.majdi.weatherfrance.utils
 import com.google.gson.JsonObject
 import com.google.gson.JsonParseException
 import com.google.gson.JsonParser
-import fr.dev.majdi.weatherfrance.model.Error
+import fr.dev.majdi.weatherfrance.domain.model.Error
 import retrofit2.Response
 
 /**

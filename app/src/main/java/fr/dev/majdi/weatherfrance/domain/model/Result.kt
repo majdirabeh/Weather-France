@@ -1,4 +1,4 @@
-package fr.dev.majdi.weatherfrance.model
+package fr.dev.majdi.weatherfrance.domain.model
 
 /**
  * Created by Majdi RABEH on 15/11/2023.

@@ -9,12 +9,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import fr.dev.majdi.weatherfrance.model.Screen
+import fr.dev.majdi.weatherfrance.domain.model.Screen
 import fr.dev.majdi.weatherfrance.ui.theme.WeatherFranceTheme
 import fr.dev.majdi.weatherfrance.utils.LanguageUtils
-import fr.dev.majdi.weatherfrance.view.WeatherScreen
-import fr.dev.majdi.weatherfrance.view.WelcomeScreen
-import fr.dev.majdi.weatherfrance.viewmodel.WeatherViewModel
+import fr.dev.majdi.weatherfrance.ui.view.WeatherScreen
+import fr.dev.majdi.weatherfrance.ui.view.WelcomeScreen
+import fr.dev.majdi.weatherfrance.ui.viewmodel.WeatherViewModel
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

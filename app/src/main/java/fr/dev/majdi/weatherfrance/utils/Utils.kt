@@ -8,7 +8,6 @@ import fr.dev.majdi.weatherfrance.R
  */
 
 object Utils {
-
     // Helper function to map OpenWeatherMap icon codes to local resources
     fun getWeatherIcon(iconId: Int): Int {
         return when (iconId) {

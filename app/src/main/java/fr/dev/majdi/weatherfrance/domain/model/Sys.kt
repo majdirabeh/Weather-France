@@ -1,4 +1,4 @@
-package fr.dev.majdi.weatherfrance.model
+package fr.dev.majdi.weatherfrance.domain.model
 
 data class Sys(
     val country: String,
